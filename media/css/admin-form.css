@@ -1,0 +1,59 @@
+html,body{
+    font-family: Montserrat, sans-serif;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto;
+}
+
+input[type="text"], textarea{
+    margin: 10px ;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+    outline: none;
+    width: 100%;
+}
+input[type="text"]{
+    width: 85vw;
+}
+input[type="file"]{
+    margin: 0 auto;
+}
+textarea{
+    resize: vertical;
+    width: 85vw;
+}
+button{
+    background: #e3e3e3;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    /* border: unset; */
+    padding: 18px 32px;
+    border-radius: 15px;
+}
+p{
+    margin: 10px auto;
+}
+.form > p{
+    text-align: center;
+}
+@media(max-width: 480px){
+    input[type="text"], textarea{
+        width: 92%;}
+    .form{width:100%;}
+    form{ width: 90%;
+    margin: 0 auto;}
+    p{ width: 90%;}
+    button{
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 14px 28px;
+    border-radius: 15px; }
+}
